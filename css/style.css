@@ -1,12 +1,12 @@
 :root {
     --my-dark: #1F1F1F;
     --my-dark-blue: #161C3B;
-    --my-blue: #256ecf;
+    --my-blue: #0044a2;
     --my-light-blue: #2D64E6;
 }
 
-.row {
-    margin-right: 0rem !important;
+.cursor {
+    cursor: pointer;
 }
 
 #subheader {
@@ -65,8 +65,104 @@ header .nav-link {
 .my-img:hover {
     filter: opacity(1);
     border-bottom: 3px solid var(--my-light-blue);
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.my-img.active {
+    filter: opacity(1);
+    border-bottom: 3px solid var(--my-light-blue);
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
 }
 
 .my-desc-img {
     display: none;
+}
+
+.my-tw2 {
+    height: 595px;
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.my-tw2 h2, .my-tw2 p {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+
+#new-game {
+    background-color: var(--my-dark);
+}
+
+#new-game .cursor:hover {
+    transform: translateY(-20px) rotate(4deg) scale(105%);
+    transition: .3s;
+    cursor: grab;
+    filter: brightness(120%) contrast(160%);
+}
+
+#ps-plus {
+    height: 250px;
+}
+
+#ps-now {
+    background-color: var(--my-dark-blue);
+    height: 285px;
+}
+
+#footer {
+    background-color: var(--my-blue);
+}
+
+.my-copy {
+    font-size: .8rem;
+}
+
+.my-globe {
+    width: 1rem;
+    margin-right: .8rem;
+}
+
+footer ul li {
+    cursor: pointer;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+/* Media query */
+@media screen and (min-width:576px) {
+    #hero img {
+        height: 5rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #hero img {
+        height: 6rem;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #hero img {
+        height: 4rem;
+    }
+
+    #ps-plus {
+        height: 400px;
+    }
+    
+    #ps-now {
+        background-color: var(--my-dark-blue);
+        height: 460px;
+    }
+
+    .my-social {
+        width: 800px;
+        margin: 0 auto;
+    }
 }
