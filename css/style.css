@@ -1,0 +1,72 @@
+:root {
+    --my-dark: #1F1F1F;
+    --my-dark-blue: #161C3B;
+    --my-blue: #256ecf;
+    --my-light-blue: #2D64E6;
+}
+
+.row {
+    margin-right: 0rem !important;
+}
+
+#subheader {
+    height: 36px;
+}
+
+nav {
+    height: 68px;
+}
+
+header .nav-link {
+    color: black;
+}
+
+#hero {
+    height: 595px;
+    background-image: url(../img/jumbo-bg.png);
+    background-size: cover;
+    background-position: center top;
+}
+
+#hero img {
+    height: 4rem;
+}
+
+.my-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.my-card img {
+    border-radius: .8rem;
+}
+
+.my-card:after {
+    content: "";
+    border: 3px solid var(--my-light-blue);
+    border-radius: 1rem;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    display: none;
+}
+
+.my-card:hover:after {
+    display: inline-block;
+}
+
+.my-img {
+    filter: opacity(.6);
+    cursor: pointer;
+}
+
+.my-img:hover {
+    filter: opacity(1);
+    border-bottom: 3px solid var(--my-light-blue);
+}
+
+.my-desc-img {
+    display: none;
+}
