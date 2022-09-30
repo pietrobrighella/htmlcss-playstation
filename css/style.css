@@ -9,6 +9,50 @@
     cursor: pointer;
 }
 
+.my-btn-hover-dark:hover:after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 50px;
+    border: 2px solid #424649;
+}
+
+.my-btn-hover-red:hover:after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 50px;
+    border: 2px solid #bb2d3b;
+}
+
+.my-btn-hover-blue:hover:after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 50px;
+    border: 2px solid #0b5ed7;
+}
+
+.my-btn-hover-light:hover:after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 50px;
+    border: 2px solid #d3d4d5;
+}
+
 #subheader {
     height: 36px;
 }
